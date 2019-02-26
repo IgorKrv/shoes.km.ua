@@ -1,0 +1,28 @@
+default: &default
+  adapter: postgresql
+  encoding: utf8
+  pool: 30
+  host: localhost
+  username: shoes
+  password: revers
+
+
+development:
+  adapter: postgresql
+  encoding: utf8
+  database: shoes_development
+  pool: 5
+  host: localhost
+  timeout: 5000
+  username: shoes
+  password: revers
+
+  test:
+    adapter: postgresql
+    encoding: utf8
+    database: shoes_test
+    pool: 5
+    timeout: 5000
+    host: localhost
+    username: shoes
+    password: revers
